@@ -1,0 +1,14 @@
+{
+  "name": "202304-tugas-webserver-expressjs",
+  "version": "1.0.0",
+  "description": "Tugas membuat web server dengan express-js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valdryan Ivandito",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
