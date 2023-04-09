@@ -1,0 +1,13 @@
+git config --global user.name "ValdryanIvandito"
+git config --global user.email "valdryan08@gmail.com" 
+git init
+git add .
+git commit -m "v1.0 / first-commit"
+(optional: git status & git log)
+git branch -M main
+git remote add origin https://github.com/ValdryanIvandito/learning-tech.git
+git push -u origin main
+
+
+
+
