@@ -1,0 +1,16 @@
+/* background color is black */
+body {
+    background-color: black;
+}
+
+/* heading text color is white and it position at the center */
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* paragraph text color is white and it position at the center */
+p {
+    color: white;
+    text-align: center;
+}

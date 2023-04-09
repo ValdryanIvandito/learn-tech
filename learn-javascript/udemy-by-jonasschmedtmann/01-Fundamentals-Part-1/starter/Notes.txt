@@ -1,0 +1,21 @@
+-----------------------
+7 Primitives Data Types
+-----------------------
+
+1. Number: Floating point numbers -> Used for decimals and integers
+   Example -> let age = 25;
+
+2. String: Sequence of characters -> Used for text
+   Example -> let firstName = Jonas;
+
+3. Boolean: Logical type that can only be 'true' or 'false -> Used for taking decisions
+   Example -> let fact = true;
+
+4. Undefined: Value taken by a variable that is not yet defined ('empty value')
+   Example -> let class;
+
+5. Null: Also means 'empty value'
+
+6. Symbol (ES2015): Value that is unique and cannot be changed (Not useful for now)
+
+7. BigInt (ES2020): Larger integers than the Number type can hold

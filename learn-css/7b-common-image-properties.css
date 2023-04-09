@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.heading1 {
+    text-align: left;
+}
+
+.heading2 {
+    text-align: center;
+}
+
+.heading3 {
+    text-align: right;
+}
+
+.imageContainer1 {
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+}
+
+.imageContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.imageContainer3 {
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+}
+
+.image1 {
+    width: 125px;
+    height: 125px;
+}
+
+.image2 {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+
+.image3 {
+    width: 125px;
+    height: 125px;
+    border-radius: 20%;
+}

@@ -1,0 +1,98 @@
+The most common CSS properties used for styling webpages include:
+1. color: Sets the text color.
+2. background-color: Sets the background color of an element.
+3. font-size: Sets the font size for text.
+4. font-family: Sets the font family for text.
+5. margin: Sets the margin properties of an element (spacing outside the element).
+6. padding: Sets the padding properties of an element (spacing inside the element).
+7. border: Sets the border properties of an element.
+8. width: Sets the width of an element.
+9. height: Sets the height of an element.
+10.display: Sets the display behavior of an element (block, inline, inline-block).
+11.position: Sets the position of an element.
+12.float: Floats an element to the left or right of other content.
+13.clear: Clears the float behavior of an element.
+14.text-align: Sets the text alignment within an element.
+15.line-height: Sets the line height for text.
+16.text-decoration: Adds text decoration (underline, overline, line-through, blink).
+17.box-shadow: Adds a shadow effect to an element.
+18.opacity: Sets the opacity level of an element.
+19.transition: Adds transition effects to an element (smoothly animates changes).
+20.cursor: Sets the cursor behavior when hovering over an element.
+
+
+Here are all the CSS properties that can be used to style text:
+1. color: Sets the text color.
+2. font-family: Sets the font family for text.
+3. font-size: Sets the font size for text.
+4. font-weight: Sets the weight (boldness) of the font.
+5. font-style: Sets the style (normal, italic, oblique) of the font.
+6. line-height: Sets the line height for text.
+7. letter-spacing: Sets the spacing between letters.
+8. text-align: Sets the text alignment within an element.
+9. text-decoration: Adds text decoration (underline, overline, line-through, blink).
+10.text-transform: Sets the capitalization of the text (uppercase, lowercase, capitalize).
+11.text-shadow: Adds a shadow effect to the text.
+12.word-spacing: Sets the spacing between words.
+13.white-space: Sets how white space within an element is handled.
+14.vertical-align: Sets the vertical alignment of an element.
+15.direction: Sets the direction of the text flow.
+16.text-indent: Sets the indentation of the first line of text within an element.
+17.text-overflow: Sets how text that overflows the element is handled.
+18.unicode-bidi: Sets the bidi algorithm used for text (e.g. left-to-right or right-to-left).
+19.word-break: Sets how words should be broken and wrapped within an element.
+20.hyphens: Sets how hyphenation should be handled within an element.
+
+
+Here are all the CSS properties that can be used to style images:
+1. width: Sets the width of the image.
+2. height: Sets the height of the image.
+3. max-width: Sets the maximum width of the image.
+4. max-height: Sets the maximum height of the image.
+5. margin: Sets the margin around the image.
+6. padding: Sets the padding around the image.
+7. border: Sets the border around the image.
+8. border-radius: Sets the border radius of the image.
+9. object-fit: Specifies how the image should be resized to fit its container.
+10.object-position: Specifies the position of the image within its container.
+11.box-shadow: Adds a shadow effect to the image.
+12.filter: Applies a visual effect to the image, such as grayscale or blur.
+13.opacity: Sets the opacity of the image.
+14.transition: Specifies a transition effect when the image changes state or is hovered over.
+15.cursor: Specifies the cursor to display when hovering over the image.
+
+
+Here are the most common CSS properties used for styling text:
+1. color: Sets the text color.
+2. font-family: Sets the font family for text.
+3. font-size: Sets the font size for text.
+4. line-height: Sets the line height for text.
+5. text-align: Sets the text alignment within an element.
+6. text-decoration: Adds text decoration (underline, overline, line-through, blink).
+7. font-weight: Sets the weight (boldness) of the font.
+
+
+Here are the most common CSS properties used for styling images:
+1. width: Sets the width of the image.
+2. height: Sets the height of the image.
+3. margin: Sets the margin around the image.
+4. padding: Sets the padding around the image.
+5. border: Sets the border around the image.
+6. border-radius: Sets the border radius of the image.
+7. object-fit: Specifies how the image should be resized to fit its container.
+
+
+The most important css properties:
+border
+border-radius
+padding
+margin
+color
+text-align
+font-family
+font-size
+font-weight
+line-height
+width
+height
+background-color
