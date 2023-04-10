@@ -30,15 +30,22 @@ app.get('/', (req, res) => {
         title: 'Home Page', 
         name: 'Valdryan Ivandito',
         students,
+        layout: 'layouts/main-layout',
     });
 });
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'About Page' });
+    res.render('about', { 
+        title: 'About Page',
+        layout: 'layouts/main-layout',
+     });
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact', { title: 'Contact Page' });
+    res.render('contact', { 
+        title: 'Contact Page',
+        layout: 'layouts/main-layout',
+    });
 });
 
 app.use('/', (req, res) => {
