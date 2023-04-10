@@ -13,14 +13,23 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Cindy Mapple</td>
-                    <td>085632456422</td>
-                    <td>
-                        <a href="" class="btn btn-primary badge rounded-pill">detail</a>
-                    </td>
-                  </tr>
+                  <% if (contacts.length === 0) { %>
+                    <tr>
+                      <td colspan="4">
+                        <div class="alert alert-danger fw-bold" role="alert">Contact data still empty!</div>
+                      </td>
+                    </tr>
+                  <% } %>
+                  <% contacts.forEach((contact, i) => { %>
+                    <tr>
+                      <th scope="row"><%= i + 1 %></th>
+                      <td><%= contact.name %></td>
+                      <td><%= contact.phoneNumber %></td>
+                      <td>
+                          <a href="/contact/<%= contact.name %>" class="btn btn-primary badge rounded-pill"><i class="bi bi-info-circle"></i> detail</a>
+                      </td>
+                    </tr>
+                  <% }) %>
                 </tbody>
               </table>
         </div>
