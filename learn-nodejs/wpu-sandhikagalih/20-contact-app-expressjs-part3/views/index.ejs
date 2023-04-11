@@ -1,0 +1,23 @@
+    <%# const name = 'Valdryan Ivandito'; %>
+    <h1>This is home page</h1>
+    <br>
+    <h4>Teacher: <%= name %></h2>
+    <h4>Students List:</h4>
+
+    <%# students.forEach(std => { %>
+    <!-- <ul>
+      <li>Name: <%# std.name %></li>
+      <li>Email: <%# std.email %> </li>
+    </ul> -->
+    <%# }) %>
+
+    <% if (students.length === 0) { %>
+      <p>Students data is still empty!</p>
+    <% } else { %>
+      <% students.forEach(std => { %>
+      <ul>
+        <li>Name: <%= std.name %></li>
+        <li>Email: <%= std.email %> </li>
+      </ul>
+      <% }) %>
+    <% } %>
