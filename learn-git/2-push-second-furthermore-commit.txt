@@ -1,5 +1,5 @@
 git add .
-git commit -m "v1.0 / first-commit"
+git commit -m "add or change contents"
 (optional: git status & git log)
 git branch -M main
 git push -u origin main
