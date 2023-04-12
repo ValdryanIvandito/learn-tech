@@ -14,16 +14,14 @@ app.get('/', (req, res) => {
     res.sendFile('./index.html', {root: __dirname});
 });
 
+app.post('/', (req, res) => {
+    res.sendFile('./index.html', {root: __dirname});
+});
+
 app.post('/random', (req, res) => {
     result = randomcard();
     res.send(`<h1>RESULT: ${result}</h1> <form action="/" method="post">
-    <button type="submit">BACK</button>
-</form>`);
-   
-});
-
-app.post('/', (req, res) => {
-    res.sendFile('./index.html', {root: __dirname});
+    <button type="submit">BACK</button></form>`);
 });
 
 app.use('/', (req, res) => {

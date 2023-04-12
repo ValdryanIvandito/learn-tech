@@ -7,6 +7,7 @@ const logger = (req, res, next) => {
     console.log('Hit API: ', req.method, req.url);
     next();
 };
+
 app.use(logger);
 
 // built-in middleware
@@ -56,4 +57,3 @@ app.use((error, req, res, next) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-
