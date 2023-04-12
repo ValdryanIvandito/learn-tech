@@ -20,6 +20,11 @@ app.get('/', (req, res) => {
 });
 
 app.post('/profile', upload.single('image'), (req, res) => {
+    const name = req.body.name;
+    const job = req.body.job;
+    const email = req.body.email;
+    const phone = req.body.phone;
+
     // Get the current path of the file
     const currentPath = req.file.path;
 
@@ -38,7 +43,7 @@ app.post('/profile', upload.single('image'), (req, res) => {
                 } else {
                     console.log('File copied successfully');
                     const publicPath = destPath.substr(-8);
-                    res.render('profile', { publicPath });
+                    res.render('profile', { name, job, email, phone, publicPath });
                 }
             });
         }
