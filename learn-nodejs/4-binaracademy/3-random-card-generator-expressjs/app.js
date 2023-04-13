@@ -3,12 +3,12 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
-const randomcard = () => {
-    const card = ['JACK', 'QUEEN', 'KING', 'ACE'];
-    const randomValue = Math.floor(Math.random() * 4);
-    const randomCard = card[randomValue];
-    return randomCard;
-}
+// const randomcard = () => {
+//     const card = ['JACK', 'QUEEN', 'KING', 'ACE'];
+//     const randomValue = Math.floor(Math.random() * 4);
+//     const randomCard = card[randomValue];
+//     return randomCard;
+// }
 
 app.get('/', (req, res) => {
     res.sendFile('./index.html', {root: __dirname});
