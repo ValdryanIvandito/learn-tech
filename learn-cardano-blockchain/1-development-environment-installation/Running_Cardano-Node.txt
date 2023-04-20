@@ -1,0 +1,57 @@
+---------------------------------------------------------------
+REFERENCE
+---------------------------------------------------------------
+https://developers.cardano.org/docs/get-started/running-cardano
+
+---------------------------------------------------------------
+1. CONFIGURATION FILES
+---------------------------------------------------------------
+mkdir -p $HOME/cardano/db
+cd $HOME/cardano
+
+------------------------
+MAINNET
+------------------------
+curl -O -J https://hydra.iohk.io/build/7370192/download/1/mainnet-config.json
+curl -O -J https://hydra.iohk.io/build/7370192/download/1/mainnet-byron-genesis.json
+curl -O -J https://hydra.iohk.io/build/7370192/download/1/mainnet-shelley-genesis.json
+curl -O -J https://hydra.iohk.io/build/7370192/download/1/mainnet-alonzo-genesis.json
+curl -O -J https://hydra.iohk.io/build/7370192/download/1/mainnet-topology.json
+
+------------------------
+TESTNET
+------------------------
+curl -O -J https://hydra.iohk.io/build/7654130/download/1/testnet-topology.json
+curl -O -J https://hydra.iohk.io/build/7654130/download/1/testnet-shelley-genesis.json
+curl -O -J https://hydra.iohk.io/build/7654130/download/1/testnet-config.json
+curl -O -J https://hydra.iohk.io/build/7654130/download/1/testnet-byron-genesis.json
+curl -O -J https://hydra.iohk.io/build/7654130/download/1/testnet-alonzo-genesis.json
+
+---------------------------------------------------------------
+2. START NODE SETUP
+---------------------------------------------------------------
+cd ~
+
+nano start_node.sh
+copy :
+ cardano-node run \
+   --config $HOME/cardano/testnet-config.json \
+   --database-path $HOME/cardano/db \
+   --socket-path $HOME/cardano/db/node.socket \
+   --host-addr 0.0.0.0 \
+   --port 3001 \
+   --topology $HOME/cardano/testnet-topology.json
+   
+ nano $HOME/.bashrc
+ copy :
+ export CARDANO_NODE_SOCKET_PATH="$HOME/cardano/db/node.socket"
+   
+ running cardano-node : 
+ . start_node.sh 
+ 
+ Testing :
+ cardano-cli query tip --testnet-magic 1097911063
+   
+ 
+
+
