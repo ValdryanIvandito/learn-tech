@@ -40,7 +40,7 @@ txAddress=$(cat myTransaction/txAddress.addr)
 echo $txAddress
 
 Result :
-addr_test1vz7a5zmz558jtg2eu0u3kcwlsd8eg8cm8nv8fdqmcluznac9nu4f6
+addr_test1vzws4fmc9rds6cvc7fcah8lsc3axquaqn2r0ulxrzxze0ccmx4x5l
 
 ---------------------------------------------------------------
 Transfer tADA From walletAddress to txAddress
@@ -59,9 +59,9 @@ cardano-cli query utxo \
 Result :
                            TxHash                                 TxIx        Amount
 --------------------------------------------------------------------------------------
-59e75878e63359903365efbb7cd0c2f7e9b5faac63f971c01717b946d89eeafb     0        100000000 lovelace + TxOutDatumNone
+62c0ce8d6e0b584e9e263e3ba076f53c23095ebd0a9198305819cfa5ecef8e81     0        1000000000 lovelace + TxOutDatumNone
 
-txHash="59e75878e63359903365efbb7cd0c2f7e9b5faac63f971c01717b946d89eeafb"
+txHash="62c0ce8d6e0b584e9e263e3ba076f53c23095ebd0a9198305819cfa5ecef8e81"
 txIx="0"
 
 -------------------------------------------------------------------------
@@ -86,7 +86,7 @@ paymentAddress=$(cat myTransaction/payment/paymentAddress.addr)
 echo $paymentAddress
 
 Result :
-addr_test1vzzfvf4xdglp06u3a963jfk8ma6qvly8z64fuh9ds48wlfg8evvly
+addr_test1vruc49xfrz37a2vzrfnyuspcexdqednc5ksxs6hjn97gt8sr2099z
 
 ---------------------------------------------------------------
 Balance Check Payment Address
@@ -106,10 +106,10 @@ Still empty
 Initiate References Variable
 ---------------------------------------------------------------
 paymentAddress=$(cat myTransaction/payment/paymentAddress.addr)
-sendAmountPayment="20000000"
+sendAmountPayment="200000000"
 
-walletAddress="addr_test1qrucpmwy08wf7eaphvu3ccjkgrr4fqdk6er4pvsl2qzxgkn37s0zwu94mwydenuj4vgwu0xvyua02mmev532k6xh06eq77dz8j"
-sendAmountWallet="50000000"
+walletAddress="addr_test1qqxpa4nw6t5svahuxte2durvnu87meq3k9gl3zjfxqq0u3ukluym9643satn7dq2gtgsmd50rh2qpesdzep4rdkqgt8st4yjgg"
+sendAmountWallet="500000000"
 
 ---------------------------------------------------------------
 Build Transaction

@@ -1,27 +1,37 @@
 ---------------------------------------------------------------
+00 - REFERENCE
+---------------------------------------------------------------
+https://plutus-community.readthedocs.io/en/latest/#Environment/Build/WindowsWSL/
+
+---------------------------------------------------------------
 00 - Install Node-JS && NPM
 ---------------------------------------------------------------
 sudo apt update
 sudo apt install nodejs
-node -v (check version)
+check version:
+node -v
 sudo apt install npm
 
 ---------------------------------------------------------------
 01 - Install NIX OS
 ---------------------------------------------------------------
-curl -L  https://nixos.org/nix/install |sh
+curl -L https://nixos.org/nix/install |sh
+
 Result :
 . /home/ivandito/.nix-profile/etc/profile.d/nix.sh
 
 ---------------------------------------------------------------
 02 - Add NIX env
-. /home/ivandito/.nix-profile/etc/profile.d/nix.sh
 ---------------------------------------------------------------
 nano ~/.bashrc
 . ~/.nix-profile/etc/profile.d/nix.sh
+.nix-profile/etc/profile.d/nix.sh
+
+
 
 Test Run :
 . ~/.bashrc
+nix-shell --version
 
 ---------------------------------------------------------------
 03 - Edit the /etc/nix/nix.conf using root
@@ -29,7 +39,7 @@ Test Run :
 sudo mkdir -p /etc/nix
 
 sudo nano /etc/nix/nix.conf
-copy :
+copy :  
 substituters        = https://hydra.iohk.io https://iohk.cachix.org https://cache.nixos.org/
 trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7Rqoo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
 
