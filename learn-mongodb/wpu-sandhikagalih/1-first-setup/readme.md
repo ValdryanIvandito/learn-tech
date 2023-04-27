@@ -13,33 +13,33 @@
 4. How to Use Methods At Terminal
    - Go to https://www.mongodb.com/docs/mongodb-shell/reference/methods/ for complete references
 
-   Try to use this commands:
-   show dbs
-   Note: To display the list of all databases in a MongoDB server.
+   - Try to use this commands:
+     * show dbs
+       Note: To display the list of all databases in a MongoDB server.
 
-   use wpu
-   Note: The use command in MongoDB is used to switch to a specific database. If the database does not exist (wpu is not exist), it will be    created automatically when you first write data to it.
+     * use wpu
+       Note: The use command in MongoDB is used to switch to a specific database. If the database does not exist (wpu is not exist), it will be    created automatically when you first write data to it.
 
-   db.createCollection('mahasiswa')
-   Note: The db.createCollection() method in MongoDB is used to create a new collection in the current database.
+     * db.createCollection('mahasiswa')
+       Note: The db.createCollection() method in MongoDB is used to create a new collection in the current database.
 
-   show collections
-   Note: In MongoDB, the show collections command is used to display a list of all collections in the current database. To use this command, you first need to switch to the database you want to see the collections for using the use command.
+     * show collections
+       Note: In MongoDB, the show collections command is used to display a list of all collections in the current database. To use this command, you first need to switch to the database you want to see the collections for using the use command.
 
-   db.mahasiswa.insert({ nama: "Valdryan Ivandito", email: "valdryan05@gmail.com" })
-   Note: The db.mahasiswa.insert() method in MongoDB is used to insert a new document into a collection. To insert a new document into the "mahasiswa" collection with the fields "nama" and "email" set to "Valdryan Ivandito" and "valdryan05@gmail.com"
+     * db.mahasiswa.insert({ nama: "Valdryan Ivandito", email: "valdryan05@gmail.com" })
+       Note: The db.mahasiswa.insert() method in MongoDB is used to insert a new document into a collection. To insert a new document into the "mahasiswa" collection with the fields "nama" and "email" set to "Valdryan Ivandito" and "valdryan05@gmail.com"
 
-   db.mahasiswa.insertMany([
-      { nama: "Cindy Maple", email: "cindy@gmail.com"},
-      { nama: "Gideon Vaan", email: "gideon@gmail.com"}
-   ])
-   Note: The db.mahasiswa.insertMany() method in MongoDB is used to insert multiple documents into a collection at once. To insert multiple documents into the "mahasiswa" collection with the specified fields.
+     * db.mahasiswa.insertMany([
+        { nama: "Cindy Maple", email: "cindy@gmail.com"},
+        { nama: "Gideon Vaan", email: "gideon@gmail.com"}
+       ])
+      Note: The db.mahasiswa.insertMany() method in MongoDB is used to insert multiple documents into a collection at once. To insert multiple documents into the "mahasiswa" collection with the specified fields.
 
-   db.mahasiswa.find()
-   Note: The db.mahasiswa.find() method in MongoDB is used to retrieve documents from the "mahasiswa" collection. When called without any arguments, find() returns all documents in the collection.
+     * db.mahasiswa.find()
+       Note: The db.mahasiswa.find() method in MongoDB is used to retrieve documents from the "mahasiswa" collection. When called without any arguments, find() returns all documents in the collection.
 
-   cls
-   Note: To clear the terminal screen.
+     * cls
+       Note: To clear the terminal screen.
 
 4. How to Use Atlas (Cloud)
    - Go to https://www.mongodb.com/atlas
