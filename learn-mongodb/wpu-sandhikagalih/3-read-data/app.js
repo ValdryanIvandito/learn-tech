@@ -31,7 +31,7 @@ client.connect((error, client) => {
     console.log(
         db
             .collection('mahasiswa')
-            .find({ nama: 'Denny' })
+            .find({ nama: 'Valdryan Ivandito' })
             .toArray((error, result) => {
                 console.log(result);
             })
@@ -41,7 +41,7 @@ client.connect((error, client) => {
     console.log(
         db
             .collection('mahasiswa')
-            .find({ _id: ObjectID('644a29c8368624214c5852e5') })
+            .find({ _id: ObjectID('6448c3fe6ab28ef2b5c3fe5f') })
             .toArray((error, result) => {
                 console.log(result);
             })

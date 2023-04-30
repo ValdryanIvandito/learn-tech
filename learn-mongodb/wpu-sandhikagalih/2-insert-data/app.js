@@ -20,8 +20,8 @@ client.connect((error, client) => {
     // add 1 data collection to mahasiswa
     db.collection('mahasiswa').insertOne(
         {
-            nama: 'Erik',
-            email: 'erik@gmail.com',
+            nama: 'Valdryan Ivandito',
+            email: 'valdryan@gmail.com',
         },
         (error, result) => {
             if (error) {
@@ -35,12 +35,20 @@ client.connect((error, client) => {
     // db.collection('mahasiswa').insertMany(
     //     [
     //         {
-    //             nama: 'Erika',
-    //             email: 'erika@gmail.com',
+    //             nama: 'Cindy Maple',
+    //             email: 'cindy@gmail.com',
     //         },
     //         {
-    //             nama: 'Denny',
-    //             email: 'denny@gmail.com',
+    //             nama: 'Gideon Vaan',
+    //             email: 'gideon@gmail.com',
+    //         },
+    //         {
+    //             nama: 'Shandika Galih',
+    //             email: 'shandika@gmail.com',
+    //         },
+    //         {
+    //             nama: 'Shandika Galih',
+    //             email: 'shandika@gmail.com',
     //         },
     //     ],
     //     (error, result) => {

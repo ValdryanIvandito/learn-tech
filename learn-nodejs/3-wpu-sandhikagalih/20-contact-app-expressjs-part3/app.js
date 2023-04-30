@@ -164,8 +164,10 @@ app.post('/contact/update', [
     }
 });
 
+// detail contact
 app.get('/contact/:name', (req, res) => {
     const contact = findContact(req.params.name);
+
     res.render('detail', { 
         title: 'Detail Page',
         layout: 'layouts/main-layout',
