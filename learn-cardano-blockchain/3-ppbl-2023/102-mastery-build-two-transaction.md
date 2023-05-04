@@ -2,7 +2,7 @@
 PART-1 Tx #1: How to build a split UTxO Transaction:
 ====================================================
 ----------------------------------------------------------------------
-STEP-1 Use The Wallet Address That Was Created In The 1022-1023 module
+STEP-1 Use The Wallet Address That Was Created In The 1022 module
 ----------------------------------------------------------------------
 cd my-new-wallet/transaction
 
@@ -12,6 +12,11 @@ STEP-2 Initiate Blockchain Network
 network="testnet-magic 1"
 cardano-cli query tip \
 --$network
+
+--------------------------------------
+STEP-3 Send PPBL Token To payment.addr
+--------------------------------------
+Open cardano wallet and then send your PPBL2023 token wallet to payment.addr
 
 -------------------------
 STEP-3 Initiate Variables
@@ -27,10 +32,10 @@ cardano-cli query utxo \
 Result :
                            TxHash                                 TxIx        Amount  
 --------------------------------------------------------------------------------------
-1fff953597ac36aba87d2116d07cec35f4fb3a4e4da79f75bc848b1c74e08497     1        79831815 lovelace + TxOutDatumNone
-37c70ae0cb1ee92665da34e7ab0ee6bef7ebec5c4cc7153fa5128d4b2d020d62     0        1245590 lovelace + 1 05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056.3232325050424c323032335050424c323032335f4956414e4449544f + TxOutDatumNone
+4b355eeae203434d9565a35bda355ea2a5dd79003e673fad744cdb44f3d081b2     0        1262830 lovelace + 1 05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056.3232325050424c323032335050424c323032335f4956414e4449544f + TxOutDatumNone
+f705c65d2a83ebb3a64c2aceb6365e302e0e1c00664a4dece247e5408f44ab64     1        79831815 lovelace + TxOutDatumNone
 
-txHash="1fff953597ac36aba87d2116d07cec35f4fb3a4e4da79f75bc848b1c74e08497"
+txHash="f705c65d2a83ebb3a64c2aceb6365e302e0e1c00664a4dece247e5408f44ab64"
 echo $txHash
 
 txIx="1"
@@ -85,7 +90,7 @@ PART-2 Tx #2: How to send a Cardano Native Asset in a transaction:
 -------------------------
 STEP-1 Initiate Variables
 -------------------------
-recipientAddress=addr_test1qp7hqsclprzhj3xzecm4x4ywk734w5g8ghhccnlfjp7g2pykluym9643satn7dq2gtgsmd50rh2qpesdzep4rdkqgt8srg4ldg
+recipientAddress=addr_test1qpv9flkun5vnt9ylkyfz9vxug3phfpu650swc098hsg976zgeanlhnk8wgu8nc957efysy8rc7jxk5jfjhklnlwy2npq749k0y
 echo $recipientAddress
 
 Check senderAddress balance:
@@ -94,22 +99,21 @@ cardano-cli query utxo \
 --$network
 
 Result :
-                           TxHash                                 TxIx        Amount
+                           TxHash                                 TxIx        Amount  
 --------------------------------------------------------------------------------------
-5bf792ba9b24050c7b72eff259b2174cfba1994bf285616127523795d6bec7af     1        29226295 lovelace + TxOutDatumNone
-63479ccaadd1685ee5a9a2bf829374a9e801c147349631c39732e339bac1519f     0        1245590 lovelace + 1 05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056.3232325050424c323032335050424c323032335f4956414e4449544f + TxOutDatumNone
-bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1     0        10000000 lovelace + TxOutDatumNone
-bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1     1        15000000 lovelace + TxOutDatumNone
-bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1     2        25000000 lovelace + TxOutDatumNone
+4b355eeae203434d9565a35bda355ea2a5dd79003e673fad744cdb44f3d081b2     0        1262830 lovelace + 1 05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056.3232325050424c323032335050424c323032335f4956414e4449544f + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     0        10000000 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     1        15000000 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     2        25000000 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     3        29657734 lovelace + TxOutDatumNone
 
-
-txHashLovelace="bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1"
+txHashLovelace="dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a"
 echo $txHashLovelace
 
-txIxLovelace="2"
+txIxLovelace="3"
 echo $txIxLovelace
 
-txHashToken="63479ccaadd1685ee5a9a2bf829374a9e801c147349631c39732e339bac1519f"
+txHashToken="4b355eeae203434d9565a35bda355ea2a5dd79003e673fad744cdb44f3d081b2"
 echo $txHashToken
 
 txIxToken="0"
@@ -159,9 +163,9 @@ cardano-cli query utxo \
 
                            TxHash                                 TxIx        Amount  
 --------------------------------------------------------------------------------------
-5bf792ba9b24050c7b72eff259b2174cfba1994bf285616127523795d6bec7af     1        29226295 lovelace + TxOutDatumNone
-bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1     0        10000000 lovelace + TxOutDatumNone
-bce4e838398353b7f72029a7f4765d3f32a2118d45dc68a20a13b7bd8ec352f1     1        15000000 lovelace + TxOutDatumNone
-f3d119f28d22095d6cb87d202a5ec7a53d87b34c391657819ac81adc9b10202b     1        24568561 lovelace + TxOutDatumNone
+be34f17626326b539eed7dad7ee4e021a874db7e585c4b90a822b58d26917b60     1        29243535 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     0        10000000 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     1        15000000 lovelace + TxOutDatumNone
+dc4ffb166a5875c0a819c47f53dc8556c67a8ee7be6ea3ce3656313696ea0b5a     2        25000000 lovelace + TxOutDatumNone
 
 Check Transaction-Id (TxHash) at https://preprod.cardanoscan.io

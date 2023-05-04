@@ -1,0 +1,3 @@
+                           TxHash                                 TxIx        Amount  
+--------------------------------------------------------------------------------------
+8636d025a182a5c800fdcb6b272c05154ae6640b21a35407ac1141299da109ad     0        1305930 lovelace + 1 05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056.3130305050424c323032335050424c323032335f4956414e4449544f + TxOutDatumInline ReferenceTxInsScriptsInlineDatumsInBabbageEra (ScriptDataConstructor 0 [ScriptDataNumber 5,ScriptDataList []])

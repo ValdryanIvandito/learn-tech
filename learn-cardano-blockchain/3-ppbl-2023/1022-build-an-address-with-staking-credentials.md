@@ -56,6 +56,6 @@ cardano-cli query utxo \
 --$network
 
 Result :
-                           TxHash                                 TxIx        Amount  
+                           TxHash                                 TxIx        Amount
 --------------------------------------------------------------------------------------
-afd4085d259a5a5e1ac9d39ce1bf55a8675396d6b7a80e2299b3f1b8a1833ac6     0        100000000 lovelace + TxOutDatumNone
+d885c9eefd29865dc638c0cde1908051885fdd467d8feffb0bc8f23f9a2ff0d1     0        100000000 lovelace + TxOutDatumNone
