@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Data</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Update Data</h1>
+  <form method="POST" action="/updateData">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="scores">Scores:</label>
+    <input type="text" id="scores" name="scores" required>
+    <br>
+    <button type="submit">Update</button>
+  </form>
+
+  <!-- <script>
+    $(document).ready(function() {
+      $('#updateForm').submit(function(event) {
+        event.preventDefault();
+
+        const oldusername = $('#oldusername').val();
+        const username = $('#username').val();
+        const scores = $('#scores').val();
+
+        const data = {
+          username: username,
+          scores: scores
+        };
+
+        $.ajax({
+          type: 'PUT',
+          url: '/updateData/' + id,
+          data: JSON.stringify(data),
+          contentType: 'application/json',
+          success: function(response) {
+            alert(response.message);
+          },
+          error: function(xhr, status, error) {
+            alert('Terjadi kesalahan: ' + error);
+          }
+        });
+      });
+    });
+  </script> -->
+</body>
+</html>
