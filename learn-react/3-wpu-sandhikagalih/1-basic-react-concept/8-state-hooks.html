@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/jsx">
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+
+        const Header = ({name}) => {
+            return (<h1>Belajar React bareng {name ? name : 'WPU'} 😄</h1>);
+        }
+
+        const HomePage = () => {
+            const students = ['Sandhika', 'Doddy', 'Erik'];
+            const [likes, setLikes] = React.useState(0);
+
+            const handleClick = () => {
+                setLikes(likes + 1);
+            }
+
+            return (
+                <div>
+                    <Header />
+                    <ul>
+                        {
+                            students.map((student) => (
+                                <li key={student}>{student}</li>
+                            ))
+                        }
+                    </ul>
+                    <button onClick={handleClick}>Like ({likes})</button>
+                </div>
+            );
+        }
+
+        root.render(<HomePage />);
+    </script>
+</body>
+</html>
