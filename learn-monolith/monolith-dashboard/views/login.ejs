@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <%- include('./partials/head.ejs') %>
+</head>
+<body>
+  <!-- container -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Monolith Dashboard</h5>
+        <% if(isWrong === true) { %>
+          <div class="alert alert-danger" role="alert">
+            Username/password Invalid !
+          </div>          
+        <% } %>
+        <form action="/login" method="post">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Username</label>
+            <input type="text" name="username" class="form-control" id="exampleFormControlInput1" placeholder="Enter Username">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter Password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mb-3">Login</button>
+        </form>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>

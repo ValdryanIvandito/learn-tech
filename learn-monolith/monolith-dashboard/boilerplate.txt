@@ -1,0 +1,4 @@
+npx express --view ejs --git monolith-dashboard
+npm install 
+npm install dotenv-load -D nodemon -D
+npm install sequelize pg pg-hstore

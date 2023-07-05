@@ -1,0 +1,4 @@
+npm install react-router-dom
+Buat folder routes dan siapkan index.js file
+di routes/index.js:
+	
